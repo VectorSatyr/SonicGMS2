@@ -4,7 +4,9 @@ function player_react_to_glowing_spheres_wall_bumper(argument0, argument1) {
 
 	switch (phase) {
 	case "checking":
-	    if (game_pc_arms_in_shape(id, ind, x_wall_radius + 2)) {
+	    if (
+			game_pc_arms_in_shape_ext(id, ind, x_wall_radius + 2, y_wall_radius)
+		) {
 	        game_pc_react_to(id, ind);
 	    }
 	    break;

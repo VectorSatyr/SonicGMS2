@@ -68,6 +68,7 @@ x_radius = 8;
 x_wall_radius = 10;
 
 y_radius = 15;
+y_wall_radius = 8;
 y_snap_distance = 16;
 
 on_the_ground = true;

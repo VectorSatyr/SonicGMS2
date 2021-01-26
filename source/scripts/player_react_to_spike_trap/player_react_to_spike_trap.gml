@@ -7,8 +7,7 @@ function player_react_to_spike_trap(argument0, argument1) {
 	    if (state != player_is_hurt and recovery_time <= 0 and 
 	        invincibility_time <= 0 and not superform) {
 	        var rotation_offset = angle_wrap(round_to(ind.image_angle, 90) - mask_direction);
-
-	        if (game_pc_arms_in_shape(id, ind, x_wall_radius)) {
+	        if (game_pc_arms_in_shape_ext(id, ind, x_wall_radius, y_wall_radius)) {
 	            if ((rotation_offset == 270 and x_speed < 0) or rotation_offset == 90 and x_speed > 0) {
 	                game_pc_react_to(id, ind);
 	            }

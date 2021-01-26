@@ -4,7 +4,10 @@ function player_react_to_lamp_post(argument0, argument1) {
 
 	switch (phase) {
 	case "checking":
-	    if (owner.index == 0 and not ind.activated and game_pc_arms_in_shape(id, ind, x_wall_radius)) {
+	    if (
+			owner.index == 0 and not ind.activated and 
+			game_pc_arms_in_shape_ext(id, ind, x_wall_radius, y_wall_radius)
+		) {
 	        game_pc_react_to(id, ind);
 	    }
 	    break;
